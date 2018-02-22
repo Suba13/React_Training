@@ -1,0 +1,55 @@
+1)Arrow function
+2)classes
+3)prototype
+4)promises
+1)var p=new Promise((resolve,reject)=>{setTimeout(()=>resolve('done'),2000)})
+p.then(data =>console.log(data))
+5)generators
+1)function* generate(){
+try{
+console.log(10);
+let p1=yield p1;
+console.log(p1);
+let p2=yield p2;
+console.log(p2);
+let p3=yield p3;
+console.log(p3);
+console.log(50);
+}catch(e){}
+}
+
+
+// let newproduct=[];
+// for (y of products) {
+// y.price= y.price*(50/100)+y.price;
+// //   console.log(y.price);
+//   newproduct.push({
+//     id:y.id,
+//     title:y.title,
+//     price:y.price
+//   });
+// }
+
+
+
+// let newvalue=Object.keys(products).map(function(key, index) {
+// //    price= index.price*(50/100)+index.price;
+// //   console.log(price,"price");
+//   products[key].price = products[key].price *(50/100)+products[key].price;
+// //   console.log(products[key].price * 2);
+// //   console.log(products);
+// });
+// console.log(products);
+
+
+
+// var anu = products => {
+// var newobj = [];
+// products.forEach(function(obj) {
+// if (obj.price % 3 == 0 && obj.price % 5 == 0) {
+// newobj = obj;
+// }
+// });
+// console.log(newobj);
+// };
+// anu(products);

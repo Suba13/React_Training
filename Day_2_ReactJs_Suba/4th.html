@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="toggleGlow('rgb(255,242,0)')">Toggle</button>
+    <script>
+        // write a toggleGlow function that toggles the body background color 
+        // to yellow and white 
+        function toggleGlow(color) {
+            var property = document.body;
+            if (property.className !== 'toggled') {
+                property.style.backgroundColor = color;
+                property.className = 'toggled'
+            }
+            else {
+                property.style.backgroundColor = "rgb(122, 232, 179)";
+                property.className = '';
+            }
+        }
+    </script>
+</body>
+
+</html>

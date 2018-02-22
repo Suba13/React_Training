@@ -1,0 +1,12 @@
+1)component class reuse, testing component,function component-can't life cycle and state
+2)syntatic event
+3)this.props
+this.state
+this.setstate
+parent-child->props
+child-parent ->function(call back)
+4)url
+5)partial rendering
+6)es6 advantage-null,undefined
+7)jsx-create react element
+8)event handling
