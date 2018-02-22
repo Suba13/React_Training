@@ -1,0 +1,22 @@
+1.Redux
+Advantage:
+1.Store
+one single state
+don't maintain state in different place maintain in single palce
+single source of truth
+state is read-only
+changes are made with pure function - ouput depends on always input
+2.Action
+type
+3.reducers always return new state
+using previous state and action what is new state it has been generate
+redux cdn
+reducers  is a function
+4.react-redux
+create store
+provider
+connect
+mapStateToProps
+mapDispatchToprops
+container Components -I connect with redux
+presentation Component- I don't connect with redux

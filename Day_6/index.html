@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.js"></script>
+    <title>Redux sample</title>
+</head>
+
+<body>
+    <h1 id="counter">0</h1>
+    <button onclick="store.dispatch(inaction)">Increment</button>
+    <button onclick="store.dispatch(decaction)">Decrement</button>
+    <script>
+        var inaction = { type: "inc", by: 5 }
+        var decaction = { type: "dec", by: 5 }
+        function reducer(prevstate = { counter: 0 }, action) {
+            switch (action.type) {
+                case "inc":
+                    return { counter: prevstate.counter + action.by }
+                case "dec":
+                    return { counter: prevstate.counter - action.by }
+                default:
+                    return prevstate;
+            }
+
+        }
+        var store = Redux.createStore(reducer);
+        store.subscribe(() => console.log(store.getState()))
+        store.subscribe(() => { document.getElementById("counter").innerText = store.getState().counter; })
+
+    </script>
+
+</body>
+
+</html>
