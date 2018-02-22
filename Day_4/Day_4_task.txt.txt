@@ -1,0 +1,37 @@
+1)javascripts-loosely typed
+2)proptypes:validation,type checking for props any()-loosely any datatype,function based component as well ,only in development enviorment
+oneoftype:either number or string
+3)default props-like a default argument, not an instance specific class specific, It's optional
+static default props{
+quotes:[{quote:"hello",by:1},{quote:"hiii",by:2}]
+}
+constructor(props) {
+super(props);
+
+this.state = {
+numberofitem: 0,
+
+products: [{ name: "p1", price: 300, isenable: true }
+
+        { name: "p2", price: 500, isenable: true },
+
+ { name: "p3", price: 600, isenable: true },
+ { name: "p4", price: 700, isenable: true }
+]
+ };
+}
+  
+handleCartClick = (product, index) => {
+
+console.log("Status", this.state.products[index].isenable);
+
+
+console.log(product);
+    let value = product[index] === index ? false : true;
+    
+this.setState({
+numberofitem: this.state.numberofitem + 1,
+ products: { isenable: !this.state.products[index].isenable }});
+ 
+console.log(this.state.products[index].isenable);
+  };
