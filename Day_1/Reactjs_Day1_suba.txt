@@ -1,0 +1,59 @@
+1)//copy the above array into new array
+var numbers = [1, 2, 3];
+let array=[...numbers];
+console.log("copy array",array);
+
+2)//create a merged array of above arrays
+let strictOopLanguages = ["C#", "Java", "C++"];
+let looseOopLanguages = ["Python", "Ruby"];
+let funcLanguages = ["F#", "Scala", "Erlang"];
+let frontEndLanguages = ["JavaScript", "HTML", "CSS"];
+
+let merge=[...strictOopLanguages,...looseOopLanguages,...funcLanguages,...frontEndLanguages ]
+console.log("merge array",merge);
+
+3)//create a merged object of above objects
+
+
+Add CommentColl
+
+let product = { name: "apple", price: 20 };
+let productFeatures = { perishable: true, shelfLife: 3 };
+
+let objmerge={...product,...productFeatures}
+
+console.log("merge object",objmerge);
+
+4)//create function that takes variable number of arguments
+
+ // and returns the min and max values of given parameter list
+
+
+
+function sum(...args)
+{     var max=Math.max(...args)
+      var min=Math.min(...args)
+  console.log("max element",max);
+ console.log("min element",min);
+}
+
+
+sum(5,6,7);
+
+5)//using object destructuring fetch menuitem key into variable called items
+let response = {
+  first:"suba",
+  menu: {
+    id: "file",
+    value: "File",
+    popup: {
+      menuitem: [
+        { value: "New", onclick: "CreateNewDoc()" },
+        { value: "Open", onclick: "OpenDoc()" },
+        { value: "Close", onclick: "CloseDoc()" }
+      ]
+    }
+  }
+};
+var {menu:{popup:{menuitem:items}}}=response;
+console.log(items);
