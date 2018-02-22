@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="assets/js/popover.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href="assets/css/details.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div class="heading"><span style="font-size: 30px">E</span>store</div>
+            <div class="search">
+               <form class="search-input">
+                  <input type="search" placeholder="Search for Electronics" class="search-label">
+                  <button class="search-iconbutton" type="submit"></button>
+               </form>
+            </div>
+            <div class="cart-items">
+               <div class="cart-property">
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>No. of items</td>
+                           <td>:</td>
+                           <td><strong>0</strong></td>
+                        </tr>
+                        <tr>
+                           <td>Sub Total</td>
+                           <td>:</td>
+                           <td><strong>0</strong></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <a class="cart-icon" data-toggle="popover" data-container="body" data-placement="bottom" type="button" data-html="true" href="#" id="logout">
+               <span class="icons"><i class="zmdi zmdi-shopping-basket" style="font-size: 40px;">
+               </i></span>
+               </a>
+               <div id="popover-content-logout" class="hide">
+                  <ul class="cart-products">
+                     <li class="item-image">
+                        <img src="assets/images/lcd.jpg" class="cart-image-properties">
+                        <div class="cart-add-product-properties">
+                           <p class="cart-add-product-name">Lcd tv</p>
+                           <p class="cart-add-product-price">RS.100</p>
+                        </div>
+                        <div class="cart-add-product-total">
+                           <p class="cart-add-product-type">1 No.</p>
+                           <p class="cart-add-product-total-amount">Rs.100</p>
+                        </div>
+                        <a href="#" class="cart-add-product-close">X</a>
+                     </li>
+                     <li class="item-image">
+                        <img src="assets/images/lcd.jpg" class="cart-image-properties">
+                        <div class="cart-add-product-properties">
+                           <p class="cart-add-product-name">Lcd tv</p>
+                           <p class="cart-add-product-price">RS.100</p>
+                        </div>
+                        <div class="cart-add-product-total">
+                           <p class="cart-add-product-type">1 No.</p>
+                           <p class="cart-add-product-total-amount">Rs.100</p>
+                        </div>
+                        <a href="#" class="cart-add-product-close">X</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <a href="log in.html" class="button-login">Log in</a>
+            <a href="sign up.html" class="button-signup">Sign up</a>
+         </div>
+      </header>
+      <div class="container main">
+         <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 left">
+               <div class="leftside-content">
+                  <div class="image-align">
+                     <img src="assets/images/Samsung1.jpeg" class="image">
+                  </div>
+                  <div class="details-button">
+                     <button type="button" class="details-cartbutton">ADD TO CART</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-5 right">
+               <div class="right-content product-info">
+                  <h3 class="right-content-heading">Specifications</h3>
+                  <table style="width:100%" class="table table-striped table-responsive">
+                        <tbody>
+                            <tr class="">
+                                <td class="feature"> Product Name</td>
+                                <td class="description">Mobile</td>
+                            </tr>
+                            <tr>
+                                <td class="feature">Price</td>
+                                <td class="description">₹8,999</td>
+                            </tr>
+                            <tr>
+                                <td class="feature">In The Box</td>
+                                <td class="description">Handset, USB Cable, Adapter, Stereo Headset , User Guide, Warranty Card</td>
+                            </tr>
+                            <tr>
+                                <td class="feature">Model Number</td>
+                                <td class="description">SM-G600FZDDINS</td>
+                            </tr>
+                            <tr>
+                                <td class="feature">Size</td>
+                                <td class="description">5.5 inch</td>
+                            </tr>
+                            <tr>
+                                <td class="feature">Brand</td>
+                                <td class="description">Samsung</td>
+                            </tr>
+                            <tr>
+                                <td class="feature">Color</td>
+                                <td class="description">Black</td>
+                            </tr>
+                            <tr>
+                                <td class="feature">Touch Screen</td>
+                                <td class="description">Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

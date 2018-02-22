@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="assets/js/popover.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href="assets/css/styles.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <div class="container">
+               <div class="heading"><span style="font-size: 30px">E</span>store</div>
+               <div class="search">
+                  <form class="search-input">
+                     <input type="search" placeholder="Search for Electronics" class="search-label">
+                     <button class="search-iconbutton" type="submit"></button>
+                  </form>
+               </div>
+               <div class="cart-items">
+                  <div class="cart-property">
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td>No. of items</td>
+                              <td>:</td>
+                              <td><strong>0</strong></td>
+                           </tr>
+                           <tr>
+                              <td>Sub Total</td>
+                              <td>:</td>
+                              <td><strong>0</strong></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <!-- <a class="cart-icon" href="#">
+                     <span class="icons"><i class="zmdi zmdi-shopping-basket" style="font-size: 40px;"></i></span>
+                     </a> -->
+                  <a class="cart-icon" data-toggle="popover" data-container="body" data-placement="bottom" type="button" data-html="true" href="#" id="logout">
+                  <span class="icons"><i class="zmdi zmdi-shopping-basket" style="font-size: 40px;">
+                  </i></span>
+                  </a>
+                  <div id="popover-content-logout" class="hide">
+                     <ul class="cart-products">
+                        <li class="item-image">
+                           <img src="assets/images/lcd.jpg" class="cart-image-properties">
+                           <div class="cart-add-product-properties">
+                              <p class="cart-add-product-name">Lcd tv</p>
+                              <p class="cart-add-product-price">RS.100</p>
+                           </div>
+                           <div class="cart-add-product-total">
+                              <p class="cart-add-product-type">1 No.</p>
+                              <p class="cart-add-product-total-amount">Rs.100</p>
+                           </div>
+                           <a href="#" class="cart-add-product-close">X</a>
+                        </li>
+                        <hr>
+                        <li class="item-image">
+                           <img src="assets/images/lcd.jpg" class="cart-image-properties">
+                           <div class="cart-add-product-properties">
+                              <p class="cart-add-product-name">Lcd tv</p>
+                              <p class="cart-add-product-price">RS.100</p>
+                           </div>
+                           <div class="cart-add-product-total">
+                              <p class="cart-add-product-type">1 No.</p>
+                              <p class="cart-add-product-total-amount">Rs.100</p>
+                           </div>
+                           <a href="#" class="cart-add-product-close">X</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <a href="log in.html" class="button-login">Log in</a>
+               <a href="sign up.html" class="button-signup">Sign up</a>
+            </div>
+         </header>
+         <div class="row products-list">
+            <div class="col-md-3">
+               <div class="each-product">
+                  <div class="product-image-properties">
+                     <a href="product-one.html"><img src="assets/images/Samsung1.jpeg" class="images"></a>
+                  </div>
+                  <h4 class="product-name">Mobile</h4>
+                  <p class="product-price">Rs.8,999</p>
+                  <div class="number-input">
+                     <a href="#" class="decrement">–</a>
+                     <input type="number" class="value-result" value="1">
+                     <a href="#" class="increment">+</a>
+                  </div>
+                  <div class="product-button">
+                     <button type="button" class="cart-add-button">ADD TO CART</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="each-product">
+                  <div class="product-image-properties">
+                     <a href="product-two.html"><img src="assets/images/moto1.jpeg" class="images"></a>
+                  </div>
+                  <h4 class="product-name">Mobile</h4>
+                  <p class="product-price">Rs.12,999</p>
+                  <div class="number-input">
+                     <a href="#" class="decrement">–</a>
+                     <input type="number" class="value-result" value="1">
+                     <a href="#" class="increment">+</a>
+                  </div>
+                  <div class="product-button">
+                     <button type="button" class="cart-add-button">ADD TO CART</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="each-product">
+                  <div class="product-image-properties">
+                     <a href="product-three.html"><img src="assets/images/xolo.jpeg" class="images"></a>
+                  </div>
+                  <h4 class="product-name">Mobile</h4>
+                  <p class="product-price">Rs.5,999</p>
+                  <div class="number-input">
+                     <a href="#" class="decrement">–</a>
+                     <input type="number" class="value-result" value="1">
+                     <a href="#" class="increment">+</a>
+                  </div>
+                  <div class="product-button">
+                     <button type="button" class="cart-add-button">ADD TO CART</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="each-product">
+                  <div class="product-image-properties">
+                     <a href="product-four.html"><img src="assets/images/redmi.jpeg" class="images"></a>
+                  </div>
+                  <h4 class="product-name">Mobile</h4>
+                  <p class="product-price">Rs.13,999</p>
+                  <div class="number-input">
+                     <a href="#" class="decrement">–</a>
+                     <input type="number" class="value-result" value="1">
+                     <a href="#" class="increment">+</a>
+                  </div>
+                  <div class="product-button">
+                     <button type="button" class="cart-add-button">ADD TO CART</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br>
+         <br>
+         <div class="row products-list">
+            <div class="col-md-3">
+               <div class="each-product">
+                  <div class="product-image-properties">
+                     <a href="product-five.html"><img src="assets/images/iphone.jpeg" class="images"></a>
+                  </div>
+                  <h4 class="product-name">Mobile Pones</h4>
+                  <p class="product-price">Rs.26,999</p>
+                  <div class="number-input">
+                     <a href="#" class="decrement">–</a>
+                     <input type="number" class="value-result" value="1">
+                     <a href="#" class="increment">+</a>
+                  </div>
+                  <div class="product-button">
+                     <button type="button" class="cart-add-button">ADD TO CART</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="each-product">
+                  <div class="product-image-properties">
+                     <a href="details.html"><img src="assets/images/smartphone2.jpg" class="images"></a>
+                  </div>
+                  <h4 class="product-name">Mobilephones</h4>
+                  <p class="product-price">Rs.9000</p>
+                  <div class="number-input">
+                     <a href="#" class="decrement">–</a>
+                     <input type="number" class="value-result" value="1">
+                     <a href="#" class="increment">+</a>
+                  </div>
+                  <div class="product-button">
+                     <button type="button" class="cart-add-button">ADD TO CART</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="each-product">
+                  <div class="product-image-properties">
+                     <a href="details.html"><img src="assets/images/smartphone3.jpg" class="images"></a>
+                  </div>
+                  <h4 class="product-name">Mobilephones</h4>
+                  <p class="product-price">Rs.7000</p>
+                  <div class="number-input">
+                     <a href="#" class="decrement">–</a>
+                     <input type="number" class="value-result" value="1">
+                     <a href="#" class="increment">+</a>
+                  </div>
+                  <div class="product-button">
+                     <button type="button" class="cart-add-button">ADD TO CART</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="each-product">
+                  <div class="product-image-properties">
+                     <a href="details.html"><img src="assets/images/smartphone4.jpg" class="images"></a>
+                  </div>
+                  <h4 class="product-name">Mobilephones</h4>
+                  <p class="product-price">Rs.8000</p>
+                  <div class="number-input">
+                     <a href="#" class="decrement">–</a>
+                     <input type="number" class="value-result" value="1">
+                     <a href="#" class="increment">+</a>
+                  </div>
+                  <div class="product-button">
+                     <button type="button" class="cart-add-button">ADD TO CART</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Bootstrap core JavaScript -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js//bootstrap.bundle.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="assets/js/jquery.easing.min.js"></script>
+      <!-- Custom scripts for this template -->
+      <script src="assets/js/agency.min.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
