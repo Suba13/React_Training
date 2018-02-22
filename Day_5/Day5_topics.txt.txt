@@ -1,0 +1,14 @@
+1)component life cycle-mounting(constructor,component will  mount,render,component didmount),
+updating(component will recieve props,should component update,component will update,render,component didupdate)
+2)immutable js
+3)react rpouter -keeps ur ui in sync with the url
+lazy code loading 
+4)browser router
+5)hash router
+Link
+NavLink
+redirect
+
+6)history props
+7)location props-pathname,hash,state,search
+8)match props-params,isExact,path,url
