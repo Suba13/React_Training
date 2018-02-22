@@ -1,0 +1,26 @@
+1.form
+controlled componrnts uncontrolledcomponrnts
+2.Testing
+jest
+suites-collection os specs{describe}
+specs-containing one r more expectations (indivual test case){it}
+expectations -assertions that evaluate to true or false
+matches-are predefined helpers for common assertions
+
+setup&Teardown
+beforeach,afterEach-executed for each spec
+before all&after all
+
+enzyme:
+shallow rendering - it happen at one level
+dom rendering
+
+yarn start
+yarn add enzyme enzyme-adapter-react-16 enzyme-to-json react-test-render  --dev
+
+react on server
+renderToString()
+
+stackblitz.com
+loadash
+
