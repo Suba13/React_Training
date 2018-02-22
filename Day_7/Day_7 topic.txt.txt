@@ -1,0 +1,14 @@
+1.applymiddleware-spying on the store
+create logger
+redux saga-make side effect
+mental mode
+sepatrate thresd in your application responsible for side effect
+saga b/w store and reducer
+generator to make those asynchronous flow easy to read,write and test
+
+1.actionTypes
+2.actioncreators
+3.reducers
+4.sagas
+5.ctreatestore
+6.app component
